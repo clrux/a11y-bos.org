@@ -1,0 +1,80 @@
+.sponsors {
+    border-top: rem(1) solid darken($tertiary, 15%);
+    border-bottom: rem(3) solid darken($tertiary, 15%);
+    background: $tertiary;
+
+    ul {
+        margin: 0 0 rem(50) 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin: 0 1.5%;
+            // width: 12.5%;
+            padding: 0;
+            background: transparent;
+            text-align: center;
+
+            a {
+                display: block;
+                text-align: center;
+            }
+
+            img {
+                width: auto;
+                height: rem(50);
+            }
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    margin-bottom: rem(50);
+
+    .copyright {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .social-media {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+        vertical-align: top;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline;
+
+                a {
+
+                    svg {
+                        height: rem(32);
+                        width: rem(32);
+                        fill: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &:after {
+        content: " ";
+        display: block;
+        position: relative;
+        width: 100%;
+        bottom: rem(-10);
+        height: rem(10);
+        background: linear-gradient(-45deg, transparent 72%, $white 72%) 0 50%,
+                    linear-gradient( 45deg, transparent 72%, $white 72%) 0 50%;
+        background-repeat: repeat-x;
+        background-size: rem(10) rem(10), rem(10) rem(10);
+    }
+}

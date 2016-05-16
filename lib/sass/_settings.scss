@@ -1,0 +1,25 @@
+$primary:                  #004182;
+$secondary:                darken(desaturate(invert($primary), 25%), 30%); //#C60C30;
+$tertiary:                 lighten(desaturate(mix($primary, $secondary, 30%), 25%), 40%);
+$white:                    #F9F9F9;
+$black:                    invert($white);
+$base:                     darken($white, 5%);
+$shadow:                   rgba(0,0,0,.25);
+
+$max-page-width:           90%;
+$res-page-width:           768px;
+
+$base-font-size:           rem(18);
+$small-font-size:          rem(16);
+$medium-font-size:         rem(24);
+$large-font-size:          rem(32);
+
+$font:                     "Signika", sans-serif;
+
+$radius:                   rem(4);
+
+// Slick slider
+$slick-prev-character:     "⇦";
+$slick-next-character:     "⇨";
+$slick-dot-character:      "•";
+$slick-dot-size:           rem(16);

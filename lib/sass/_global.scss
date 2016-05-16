@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: $base;
+    font-family: $font;
+    font-size: $base-font-size;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: $max-page-width;
+    min-width: $res-page-width;
+    background: $white;
+}
+
+.content {
+    padding: rem(10) rem(16);
+}
+
+.flex {
+    @extend %flex;
+
+    &.is-flexed {
+        @include flex(1);
+    }
+}
+
+.sr-only {
+    @extend %sr;
+}
+
+a {
+    color: $primary;
+
+    &:hover,
+    &:focus {
+        color: darken($primary, 15%);
+        // box-shadow: 0 0 1px darken($primary, 15%);
+    }
+
+    &:visited {
+        color: darken($primary, 15%);
+    }
+}

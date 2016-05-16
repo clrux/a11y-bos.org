@@ -1,0 +1,30 @@
+.main-content {
+    @include flex(1);
+    vertical-align: top;
+
+    .search-form {
+
+        .input-text {
+            @include flex(1);
+            margin-right: rem(16);
+            border: rem(1) solid darken($primary, 5%);
+            border-radius: $radius;
+            padding: rem(4) rem(10);
+            font-size: $small-font-size;
+            font-family: $font;
+        }
+
+        .search-button {
+            display: inline-block;
+            margin-right: rem(16);
+            background: $primary;
+            color: $white;
+            border: rem(1) solid $primary;
+            border-radius: $radius;
+            padding: rem(4) rem(10);
+            font-size: $small-font-size;
+            font-family: $font;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@media screen and (min-width: $res-page-width) {
+
+    .desktop {
+        display: initial;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $res-page-width) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    .wrapper {
+        min-width: auto;
+    }
+
+    .wrapper.flex {
+        display: block;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .main-content {
+        display: block;
+    }
+
+    .sidebar {
+        display: block;
+        width: auto;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+
+        .top-notch,
+        .bottom-notch {
+            display: none;
+        }
+    }
+
+    .sponsors {
+
+        ul {
+
+            li {
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

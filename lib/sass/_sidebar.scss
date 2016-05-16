@@ -1,0 +1,64 @@
+.sidebar {
+    position: relative;
+    display: inline-block;
+    width: rem(350);
+    margin: rem(50) rem(-23) rem(50) 0;
+    border-style: solid;
+    border-color: $secondary;
+    border-width: rem(1) rem(1) rem(1) rem(3);
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    background: lighten($secondary, 55%);
+    vertical-align: top;
+
+    a {
+        color: darken($secondary, 10%);
+
+        &:hover,
+        &:focus {
+            color: darken($secondary, 15%);
+        }
+
+        &:visited {
+            color: darken($secondary, 15%);
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .top-notch,
+    .bottom-notch {
+        position: absolute;
+        width: rem(16);
+        height: 0;
+        padding-left: rem(16);
+        padding-bottom: rem(16);
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            margin-left: -500px;
+            border-left: 500px solid transparent;
+            border-right: 500px solid transparent;
+            border-bottom: 500px solid $secondary;
+        }
+    }
+
+    .top-notch {
+        @include transform(rotate(-135deg));
+        top: rem(-14);
+        right: 0;
+    }
+
+    .bottom-notch {
+        @include transform(rotate(315deg));
+        bottom: rem(-14);
+        right: 0;
+    }
+}
