@@ -121,10 +121,8 @@ add_action('widgets_init', 'a11y_sponsor_widget');
 // Adds our custom JS file
 function a11y_register_js() {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', 'https://code.jquery.com/jquery-1.11.3.min.js');
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-1.11.3.min.js', '', '', true);
-    wp_register_script('onload', get_stylesheet_directory_uri() . '/lib/js/onload.js');
-    wp_enqueue_script('onload', get_stylesheet_directory_uri() . '/lib/js/onload.js', array('jquery'), '1.0.0', true);
+    wp_register_script('jquery', get_stylesheet_directory_uri() . '/lib/js/jquery.js');
+    wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/lib/js/jquery.js', '', '1.11.3', true);
     wp_register_script('dropdowns', get_stylesheet_directory_uri() . '/lib/js/dropdown.js');
     wp_enqueue_script('dropdowns', get_stylesheet_directory_uri() . '/lib/js/dropdown.js', array('jquery', 'onload'), '1.0.0', true);
     // wp_register_script('slick', get_stylesheet_directory_uri() . '/lib/js/slick.min.js');
