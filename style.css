@@ -150,9 +150,10 @@ h6 {
           border-radius: 0.25rem;
           padding: 0.625rem 1.125rem;
           color: #F9F9F9; }
-          .header .main-navigation .dropdown .menu-item a:hover, .header .main-navigation .dropdown .menu-item a:focus,
+          .header .main-navigation .dropdown .menu-item a:hover, .header .main-navigation .dropdown .menu-item a:focus, .header .main-navigation .dropdown .menu-item a.is-hover-focus,
           .header .main-navigation .dropdown .page_item a:hover,
-          .header .main-navigation .dropdown .page_item a:focus {
+          .header .main-navigation .dropdown .page_item a:focus,
+          .header .main-navigation .dropdown .page_item a.is-hover-focus {
             border-color: #003973;
             background: #F9F9F9;
             color: #004182; }
@@ -167,8 +168,17 @@ h6 {
         .header .main-navigation .dropdown .menu-item .sub-menu,
         .header .main-navigation .dropdown .page_item .children,
         .header .main-navigation .dropdown .page_item .sub-menu {
-          display: none;
-          position: absolute; }
+          position: absolute;
+          width: 15.625rem;
+          margin: 0;
+          padding: 0;
+          border-width: 0.0625rem 0.0625rem 0.1875rem 0.0625rem;
+          border-style: solid;
+          border-color: #003973;
+          border-radius: 0.25rem;
+          background: #F9F9F9;
+          list-style: none;
+          z-index: 100; }
           .header .main-navigation .dropdown .menu-item .children .menu-item a,
           .header .main-navigation .dropdown .menu-item .children .page_item a,
           .header .main-navigation .dropdown .menu-item .sub-menu .menu-item a,
@@ -178,6 +188,7 @@ h6 {
           .header .main-navigation .dropdown .page_item .sub-menu .menu-item a,
           .header .main-navigation .dropdown .page_item .sub-menu .page_item a {
             display: block;
+            border: 0;
             border-radius: 0;
             padding: 0.625rem 0.875rem;
             color: #004182; }
@@ -232,33 +243,32 @@ h6 {
           .header .main-navigation .dropdown .page_item .sub-menu .page_item .children,
           .header .main-navigation .dropdown .page_item .sub-menu .page_item .sub-menu {
             display: none; }
-        .header .main-navigation .dropdown .menu-item.dropdownOpen,
-        .header .main-navigation .dropdown .page_item.dropdownOpen {
+        .header .main-navigation .dropdown .menu-item.is-expanded,
+        .header .main-navigation .dropdown .page_item.is-expanded {
           border-radius: 0.25rem;
           border: 0.0625rem solid #003469;
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
           background: #F9F9F9;
           color: #004182; }
-          .header .main-navigation .dropdown .menu-item.dropdownOpen a,
-          .header .main-navigation .dropdown .menu-item.dropdownOpen .dropdownOpen,
-          .header .main-navigation .dropdown .page_item.dropdownOpen a,
-          .header .main-navigation .dropdown .page_item.dropdownOpen .dropdownOpen {
+          .header .main-navigation .dropdown .menu-item.is-expanded a,
+          .header .main-navigation .dropdown .menu-item.is-expanded .is-expanded,
+          .header .main-navigation .dropdown .page_item.is-expanded a,
+          .header .main-navigation .dropdown .page_item.is-expanded .is-expanded {
             border: 0;
             color: #004182; }
-            .header .main-navigation .dropdown .menu-item.dropdownOpen a:hover, .header .main-navigation .dropdown .menu-item.dropdownOpen a:focus,
-            .header .main-navigation .dropdown .menu-item.dropdownOpen .dropdownOpen:hover,
-            .header .main-navigation .dropdown .menu-item.dropdownOpen .dropdownOpen:focus,
-            .header .main-navigation .dropdown .page_item.dropdownOpen a:hover,
-            .header .main-navigation .dropdown .page_item.dropdownOpen a:focus,
-            .header .main-navigation .dropdown .page_item.dropdownOpen .dropdownOpen:hover,
-            .header .main-navigation .dropdown .page_item.dropdownOpen .dropdownOpen:focus {
+            .header .main-navigation .dropdown .menu-item.is-expanded a:hover, .header .main-navigation .dropdown .menu-item.is-expanded a:focus,
+            .header .main-navigation .dropdown .menu-item.is-expanded .is-expanded:hover,
+            .header .main-navigation .dropdown .menu-item.is-expanded .is-expanded:focus,
+            .header .main-navigation .dropdown .page_item.is-expanded a:hover,
+            .header .main-navigation .dropdown .page_item.is-expanded a:focus,
+            .header .main-navigation .dropdown .page_item.is-expanded .is-expanded:hover,
+            .header .main-navigation .dropdown .page_item.is-expanded .is-expanded:focus {
               border: 0; }
-          .header .main-navigation .dropdown .menu-item.dropdownOpen .children,
-          .header .main-navigation .dropdown .menu-item.dropdownOpen .sub-menu,
-          .header .main-navigation .dropdown .page_item.dropdownOpen .children,
-          .header .main-navigation .dropdown .page_item.dropdownOpen .sub-menu {
-            display: block;
+          .header .main-navigation .dropdown .menu-item.is-expanded .children,
+          .header .main-navigation .dropdown .menu-item.is-expanded .sub-menu,
+          .header .main-navigation .dropdown .page_item.is-expanded .children,
+          .header .main-navigation .dropdown .page_item.is-expanded .sub-menu {
             left: -1px;
             width: 17.1875rem;
             border: 0.0625rem solid #003469;
@@ -269,14 +279,14 @@ h6 {
             list-style: none;
             background: #F9F9F9;
             z-index: 10; }
-            .header .main-navigation .dropdown .menu-item.dropdownOpen .children .children,
-            .header .main-navigation .dropdown .menu-item.dropdownOpen .children .sub-menu,
-            .header .main-navigation .dropdown .menu-item.dropdownOpen .sub-menu .children,
-            .header .main-navigation .dropdown .menu-item.dropdownOpen .sub-menu .sub-menu,
-            .header .main-navigation .dropdown .page_item.dropdownOpen .children .children,
-            .header .main-navigation .dropdown .page_item.dropdownOpen .children .sub-menu,
-            .header .main-navigation .dropdown .page_item.dropdownOpen .sub-menu .children,
-            .header .main-navigation .dropdown .page_item.dropdownOpen .sub-menu .sub-menu {
+            .header .main-navigation .dropdown .menu-item.is-expanded .children .children,
+            .header .main-navigation .dropdown .menu-item.is-expanded .children .sub-menu,
+            .header .main-navigation .dropdown .menu-item.is-expanded .sub-menu .children,
+            .header .main-navigation .dropdown .menu-item.is-expanded .sub-menu .sub-menu,
+            .header .main-navigation .dropdown .page_item.is-expanded .children .children,
+            .header .main-navigation .dropdown .page_item.is-expanded .children .sub-menu,
+            .header .main-navigation .dropdown .page_item.is-expanded .sub-menu .children,
+            .header .main-navigation .dropdown .page_item.is-expanded .sub-menu .sub-menu {
               display: none; }
     .header .main-navigation.is-searching {
       opacity: 0; }
