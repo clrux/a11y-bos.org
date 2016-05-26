@@ -66,7 +66,8 @@
                     color: $white;
 
                     &:hover,
-                    &:focus {
+                    &:focus,
+                    &.is-hover-focus {
                         border-color: darken($primary, 3%);
                         background: $white;
                         color: $primary;
@@ -86,14 +87,24 @@
 
                 .children,
                 .sub-menu {
-                    display: none;
                     position: absolute;
+                    width: rem(250);
+                    margin: 0;
+                    padding: 0;
+                    border-width: rem(1) rem(1) rem(3) rem(1);
+                    border-style: solid;
+                    border-color: darken($primary, 3%);
+                    border-radius: $radius;
+                    background: $white;
+                    list-style: none;
+                    z-index: 100;
 
                     .menu-item,
                     .page_item {
 
                         a {
                             display: block;
+                            border: 0;
                             border-radius: 0;
                             padding: rem(10) rem(14);
                             color: $primary;
@@ -117,7 +128,7 @@
                     }
                 }
 
-                &.dropdownOpen {
+                &.is-expanded {
                     border-radius: $radius;
                     border: rem(1) solid darken($primary, 5%);
                     border-bottom-left-radius: 0;
@@ -126,7 +137,7 @@
                     color: $primary;
 
                     a,
-                    .dropdownOpen {
+                    .is-expanded {
                         border: 0;
                         color: $primary;
 
@@ -138,7 +149,6 @@
 
                     .children,
                     .sub-menu {
-                        display: block;
                         left: -1px;
                         width: rem(275);
                         border: rem(1) solid darken($primary, 5%);
