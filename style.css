@@ -390,6 +390,8 @@ h6 {
     font-size: 1rem;
     font-family: "Signika", sans-serif;
     cursor: pointer; }
+  .main-content .sponsor {
+    margin-bottom: 2rem; }
 
 .meta {
   font-size: 1rem;
@@ -470,7 +472,7 @@ h6 {
         text-align: center; }
       .sponsors ul li img {
         width: auto;
-        height: 3.125rem; }
+        height: 6rem; }
 
 .footer {
   position: relative;
