@@ -393,6 +393,14 @@ h6 {
   .main-content .sponsor {
     margin-bottom: 2rem; }
 
+.alignleft {
+  float: left;
+  hspace: 16px; }
+
+.alightright {
+  float: right;
+  hspace: 16px; }
+
 .meta {
   font-size: 1rem;
   color: #645649; }
