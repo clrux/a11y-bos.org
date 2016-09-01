@@ -395,11 +395,11 @@ h6 {
 
 .alignleft {
   float: left;
-  hspace: 16px; }
+  margin-right: 24px; }
 
 .alightright {
   float: right;
-  hspace: 16px; }
+  margin-right: 24px; }
 
 .meta {
   font-size: 1rem;
