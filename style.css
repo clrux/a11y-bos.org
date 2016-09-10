@@ -401,6 +401,9 @@ h6 {
   float: right;
   margin-right: 24px; }
 
+.clear {
+  clear: all; }
+
 .meta {
   font-size: 1rem;
   color: #645649; }
